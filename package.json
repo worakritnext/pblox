@@ -1,0 +1,8 @@
+{
+  "name": "pblox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/worakritnext/pblox.git",
+  "author": "worakritnext <worakrit.next@gmail.com>",
+  "license": "MIT"
+}

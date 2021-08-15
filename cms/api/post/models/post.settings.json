@@ -26,6 +26,17 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "posts"
+    },
+    "ctx": {
+      "type": "dynamiczone",
+      "components": [
+        "link.link",
+        "comment.comment"
+      ]
+    },
+    "categories": {
+      "via": "posts",
+      "collection": "category"
     }
   }
 }

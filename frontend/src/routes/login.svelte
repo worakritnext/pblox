@@ -33,7 +33,7 @@
 
 	<div class="my-1">
 		<label for="email">Email</label>
-		<input type="email" placeholder="Enter your email" bind:value={email} />
+		<input type="text" placeholder="Enter your email" bind:value={email} />
 	</div>
 	<div class="my-1">
 		<label for="password">Password</label>

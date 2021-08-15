@@ -13,7 +13,7 @@
 	import type { Post } from '$lib/types';
 	import { goto } from '$app/navigation';
 
-	export let posts: Post[];
+	export let posts=[]
 </script>
 
 <div class="my-4">
@@ -28,7 +28,7 @@
 		>
 			<h4 class="font-bold">{post.title}</h4>
 			<p class="mt-2 text-gray-800">{post.description}</p>
-			<p class="text-gray-500">By: {post.author.username}</p>
+			<p class="text-gray-500">By: {post.author?.username}</p>
 		</div>
 	{/each}
 </div>

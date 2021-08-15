@@ -62,17 +62,17 @@
 </script>
 
 <h1 class="text-center text-4xl mt-4">{post.title}</h1>
-<p class="text-center mt-2">By: {post.author.username}</p>
+<p class="text-center mt-2">By: {post.author.username||'ผู้เขียนไร้นาม'}</p>
 
 {#if $user && post.author.id === $user.id}
 	<p class="my-2 flex justify-center items-center gap-3">
 		<button
 			class="bg-blue-500 text-white font-bold py-2 px-4 rounded border-transparent"
-			on:click={() => goto('/new?edit=' + post.id)}>Update post</button
+			on:click={() => goto('/new?edit=' + post.id)}>อัพเดท</button
 		>
 		<button
 			class="bg-red-500 text-white font-bold py-2 px-4 rounded border-transparent"
-			on:click={deletePost}>Delete post</button
+			on:click={deletePost}>ลบ</button
 		>
 	</p>
 {/if}

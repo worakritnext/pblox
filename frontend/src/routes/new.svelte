@@ -106,19 +106,19 @@
 
 <form on:submit|preventDefault={createPost} class="my-4 mx-auto container p-4">
 	<div class="my-1">
-		<label for="title">Title</label>
-		<input type="text" placeholder="Enter title" id="title" bind:value={title} />
+		<label for="title">ชื่อเรื่อง</label>
+		<input type="text" placeholder="พิมพ์ชื่อเรื่อง" id="title" bind:value={title} />
 	</div>
 	<div class="my-1">
-		<label for="description">Description</label>
-		<input type="text" placeholder="Enter description" id="description" bind:value={description} />
+		<label for="description">อธิบาย</label>
+		<input type="text" placeholder="คำอธิบายโดยย่อ" id="description" bind:value={description} />
 	</div>
 	<div class="my-1">
-		<label for="title">Content</label>
-		<textarea rows={5} placeholder="Enter content" id="content" bind:value={content} />
+		<label for="title">เนื้อหา</label>
+		<textarea rows={5} placeholder="เนื้อรายละเอียดที่แสดง" id="content" bind:value={content} />
 	</div>
 	<div class="my-2">
-		<button class="submit" type="submit">Submit</button>
+		<button class="submit" type="submit">บันทึก</button>
 	</div>
 </form>
 
